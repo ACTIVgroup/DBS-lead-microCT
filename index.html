@@ -6,64 +6,67 @@
 <body>
 <h1>Micro-CT images of deep brain stimulation leads</h1>
 
-Images acquired with a Bruker Skyscan 1276 system.
+Acquired with a Bruker Skyscan 1276 system.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-<div class="itk-vtk-viewer"
-     data-url="Abbott_directed.nii"
-     data-viewport="200x500"
-     data-background-color="00aa00"
-     data-use2D="false"
-     title="Abbott Directed">
-</div>
-<!--<p>Abbott Directed</p>-->
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<div class="grid-container">
+
+    <div class="grid-item">
+        <div class="itk-vtk-viewer"
+             data-url="Abbott_directed.nii"
+             title="Abbott Directed&trade;">
+        </div>
+        <p>Abbott Directed&trade;</p>
+    </div>
+
+    <div class="grid-item">
+        <div class="itk-vtk-viewer"
+             data-url="Aleva_directSTIM.nii"
+             title="Aleva DirectSTIM&trade;">
+        </div>
+        <p>Aleva directSTIM&trade;</p>
+    </div>
+
+    <div class="grid-item">
+        <div class="itk-vtk-viewer"
+             data-url="BS_cartesia.nii"
+             title="Boston Scientific Cartesia&trade;">
+        </div>
+        <p>Boston Scientific Cartesia&trade;</p>
+    </div>
+
+    <div class="grid-item">
+        <div class="itk-vtk-viewer"
+             data-url="BS_vercise.nii"
+             title="Boston Scientific Vercise&trade;">
+        </div>
+        <p>Boston Scientific Vercise&trade;</p>
+    </div>
+
+    <div class="grid-item">
+        <div class="itk-vtk-viewer"
+             data-url="Medtronic_sensight.nii"
+             title="Medtronic Sensight&trade;">
+        </div>
+        <p>Medtronic Sensight&trade;</p>
+    </div>
+
 </div>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-<div class="itk-vtk-viewer"
-     data-url="Aleva_directSTIM.nii"
-     data-viewport="200x500"
-     data-background-color="00aa00"
-     data-use2D="false"
-     title="Aleva DirectSTIM">
-</div>
-<!--<p>Aleva directSTIM</p>-->
-</div>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-<div class="itk-vtk-viewer"
-     data-url="BS_cartesia.nii"
-     data-viewport="200x500"
-     data-background-color="00aa00"
-     data-use2D="false"
-     title="Boston Scientific Cartesia">
-</div>
-</div>
-<!--<p>Boston Scientific Cartesia</p>-->
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-<div class="itk-vtk-viewer"
-     data-url="BS_vercise.nii"
-     data-viewport="200x500"
-     data-background-color="00aa00"
-     data-use2D="false"
-     title="Boston Scientific Vercise">
-</div>
-</div>
-<!--<p>Boston Scientific Vercise</p>-->
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-<div class="itk-vtk-viewer"
-     data-url="Medtronic_sensight.nii"
-     data-viewport="200x500"
-     data-background-color="00aa00"
-     data-use2D="false"
-     title="Medtronic Sensight">
-</div>
-</div>
-<!--<p>Medtronic Sensight</p>-->
-
-
-<script type="text/javascript" src="https://unpkg.io/itk-vtk-viewer@9.14.1/dist/itkVtkViewerCDN.js"></script>
+<script type="text/javascript" src="https://kitware.github.io/itk-vtk-viewer/app/itkVtkViewerCDN.js"></script>
 </body>
 </html>
