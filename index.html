@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ITK/VTK Viewer test</title>
+    <title>DBS leads</title>
 </head>
 <body>
-<h1>ITK/VTK Viewer test</h1>
+<h1>Micro-CT images of deep brain stimulation leads</h1>
 
-Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1276 system.
+Images acquired with a Bruker Skyscan 1276 system.
 
-
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div class="itk-vtk-viewer"
      data-url="Abbott_directed.nii"
      data-viewport="300x200"
@@ -17,7 +17,9 @@ Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1
      title="Abbott Directed">
 </div>
 <p>Abbott Directed</p>
+</div>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div class="itk-vtk-viewer"
      data-url="Aleva_directSTIM.nii"
      data-viewport="200x300"
@@ -25,8 +27,10 @@ Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1
      data-use2D="false"
      title="Aleva DirectSTIM">
 </div>
-<p>Caption for image 2</p>
+<p>Aleva directSTIM</p>
+</div>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div class="itk-vtk-viewer"
      data-url="BS_cartesia.nii"
      data-viewport="300x600"
@@ -34,8 +38,10 @@ Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1
      data-use2D="false"
      title="Boston Scientific Cartesia">
 </div>
-<p>Caption for image 3</p>
+</div>
+<p>Boston Scientific Cartesia</p>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div class="itk-vtk-viewer"
      data-url="BS_vercise.nii"
      data-viewport="300x200"
@@ -43,8 +49,10 @@ Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1
      data-use2D="false"
      title="Boston Scientific Vercise">
 </div>
-<p>Caption for image 4</p>
+</div>
+<p>Boston Scientific Vercise</p>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div class="itk-vtk-viewer"
      data-url="Medtronic_sensight.nii"
      data-viewport="300x200"
@@ -52,7 +60,8 @@ Micro-CT images of deep brain stimulation leads acquired with a Bruker Skyscan 1
      data-use2D="false"
      title="Medtronic Sensight">
 </div>
-<p>Caption for image 5</p>
+</div>
+<p>Medtronic Sensight</p>
 
 
 <script type="text/javascript" src="https://unpkg.io/itk-vtk-viewer@9.14.1/dist/itkVtkViewerCDN.js"></script>
